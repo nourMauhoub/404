@@ -1,0 +1,99 @@
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/*Global styles*/
+*::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Variables*/
+:root {
+  --primary-color: #222222;
+  --secondary-color: #444444;
+}
+
+/*Global class*/
+.header {
+  padding: 2rem;
+}
+
+.header .logo {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .hero-img {
+  width: 70%;
+}
+
+.hero .right-col h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero .right-col h1::first-letter {
+  text-transform: capitalize;
+}
+
+.hero .right-col .subhead {
+  color: var(--secondary-color);
+  margin-bottom: 3em;
+}
+
+.hero .right-col .subhead::first-letter {
+  text-transform: capitalize;
+}
+
+.hero .right-col .back-cta {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+  border-radius: 3em;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .right-col {
+    width: 50%;
+  }
+  .hero .right-col .right-col h1 {
+    font-size: 1em;
+    max-width: 518;
+  }
+  .hero .hero-img {
+    width: 50%;
+    max-width: 518px;
+    padding-left: 3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
